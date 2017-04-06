@@ -12,7 +12,7 @@
     },
     "storageAccountName": {
       "type": "string",
-      "defaultValue": "ALIASsyncLabstorage",
+      "defaultValue": "ALIASsynclabstorage",
       "metadata": {
         "description": "The name of the Storage Account to create"
       }
