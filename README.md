@@ -4,10 +4,10 @@
 This template will deploy a set of Windows Server 2016 VMs that can be used as an Azure AD single sign-on lab.
 
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmbakunas%2Fazure-ad-sso-lab%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fdakoer%2fsynclab%2fmaster%2fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fmbakunas%2Fazure-ad-sso-lab%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3a%2f%2fraw.githubusercontent.com%2fdakoer%2fsynclab%2fmaster%2fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
@@ -31,3 +31,5 @@ With the exception of the domain controller the template only deploys the operat
 ## Active Directory Domain Services
 
 This template also deploys and configures an AD DS single-domain forest and populates the domain with OUs, users, and groups.  All of the VMs on the internal subnet are joined to this domain.
+
+Template based on mbakunas/azure-ad-sso-lab

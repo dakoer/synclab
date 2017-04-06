@@ -8,11 +8,11 @@
       "metadata": {
         "description": "The location of resources, such as templates and DSC modules, that the template depends on"
       },
-      "defaultValue": "https://raw.githubusercontent.com/mbakunas/azure-ad-sso-lab/dev-2016/"
+      "defaultValue": "https://raw.githubusercontent.com/dakoer/synclab/master/"
     },
     "storageAccountName": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "SyncLabStorage",
       "metadata": {
         "description": "The name of the Storage Account to create"
       }
@@ -33,6 +33,7 @@
     },
     "vnetName": {
       "type": "string",
+      "defaultValue": "SyncLabNet1",
       "metadata": {
         "description": "The name of the virtual network to create"
       },
@@ -69,14 +70,14 @@
     },
     "networkSecurityGroupName": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": "SyncLabNSG"
     },
     "adminUsername": {
       "type": "string",
       "metadata": {
         "description": "The local administrator username on the VMs created"
       },
-      "defaultValue": "AzureAdmin"
+      "defaultValue": "LabAdmin"
     },
     "adminPassword": {
       "type": "securestring",
@@ -127,14 +128,14 @@
       "metadata": {
         "description": "The FQDN of the AD DS domain to be created"
       },
-      "defaultValue": "contoso.com"
+      "defaultValue": "synclab.local"
     },
     "remoteDesktopGatewayName": {
       "type": "string",
       "metadata": {
         "description": "The name of the remote desktop VM"
       },
-      "defaultValue": "RDGW01"
+      "defaultValue": "Gateway"
     },
     "remoteDesktopGatewaySize": {
       "type": "string",
@@ -164,7 +165,7 @@
       "metadata": {
         "description": "The name of the VM hosting the first server in the ADFS farm"
       },
-      "defaultValue": "ADFSSTS01"
+      "defaultValue": "ADFS01"
     },
     "adfsServerSize": {
       "type": "string",
@@ -201,7 +202,7 @@
       "metadata": {
         "description": "The name of the ADFS web proxy VM"
       },
-      "defaultValue": "ADFSPRX01"
+      "defaultValue": "WAP01"
     },
     "adfsProxySize": {
       "type": "string",
@@ -238,7 +239,7 @@
       "metadata": {
         "description": "The name of the synchronization engine VM (Azure AD Connect will be run on this VM)"
       },
-      "defaultValue": "DIRSYNC01"
+      "defaultValue": "SYNC01"
     },
     "dirSyncServerSize": {
       "type": "string",
