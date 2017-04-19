@@ -12,7 +12,7 @@
     },
     "storageAccountName": {
       "type": "string",
-      "defaultValue": "ALIASsynclabstorage",
+      "defaultValue": "<ALIAS>synclabstorage",
       "metadata": {
         "description": "The name of the Storage Account to create"
       }
@@ -33,7 +33,7 @@
     },
     "vnetName": {
       "type": "string",
-      "defaultValue": "ALIASsyncnet1",
+      "defaultValue": "syncnet1<ALIAS>",
       "metadata": {
         "description": "The name of the virtual network to create"
       },
@@ -51,7 +51,7 @@
       "metadata": {
         "description": "The name of the subnet created in the new VNet"
       },
-      "defaultValue": "ExtraNet"
+      "defaultValue": "ExtraNet<ALIAS>"
     },
     "subnet1AddressSpace": {
       "type": "string",
@@ -62,7 +62,7 @@
     },
     "subnet2Name": {
       "type": "string",
-      "defaultValue": "CorpNet"
+      "defaultValue": "CorpNet<ALIAS>"
     },
     "subnet2AddressSpace": {
       "type": "string",
@@ -70,7 +70,7 @@
     },
     "networkSecurityGroupName": {
       "type": "string",
-      "defaultValue": "SyncLabNSG"
+      "defaultValue": "SyncLabNSG<ALIAS>"
     },
     "adminUsername": {
       "type": "string",
@@ -91,7 +91,7 @@
       "metadata": {
         "description": "The name of the VM hosting AD DS"
       },
-      "defaultValue": "DC01"
+      "defaultValue": "DC01<ALIAS>"
     },
     "domainControllerSize": {
       "type": "string",
@@ -135,7 +135,7 @@
       "metadata": {
         "description": "The name of the remote desktop VM"
       },
-      "defaultValue": "Gateway"
+      "defaultValue": "Gateway<ALIAS>"
     },
     "remoteDesktopGatewaySize": {
       "type": "string",
@@ -165,7 +165,7 @@
       "metadata": {
         "description": "The name of the VM hosting the first server in the ADFS farm"
       },
-      "defaultValue": "ADFS01"
+      "defaultValue": "ADFS01<ALIAS>"
     },
     "adfsServerSize": {
       "type": "string",
@@ -202,7 +202,7 @@
       "metadata": {
         "description": "The name of the ADFS web proxy VM"
       },
-      "defaultValue": "WAP01"
+      "defaultValue": "WAP01<ALIAS>"
     },
     "adfsProxySize": {
       "type": "string",
@@ -239,7 +239,7 @@
       "metadata": {
         "description": "The name of the synchronization engine VM (Azure AD Connect will be run on this VM)"
       },
-      "defaultValue": "SYNC01"
+      "defaultValue": "SYNC01<ALIAS>"
     },
     "dirSyncServerSize": {
       "type": "string",
