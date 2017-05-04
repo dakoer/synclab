@@ -79,7 +79,7 @@
       "properties": {
         "securityRules": [
           {
-            "name": "[concat('inbound-allow-',toLower(parameters('subnet1Name')),'-433')]",
+            "name": "[concat('inbound-allow-',toLower(parameters('subnet1Name')),'-443')]",
             "properties": {
               "protocol": "Tcp",
               "sourcePortRange": "*",
